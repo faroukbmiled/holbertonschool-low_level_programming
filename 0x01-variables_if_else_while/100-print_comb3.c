@@ -1,24 +1,24 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+*main - main function
+*
+*Return: 0
+*/
 int main(void)
 {
-int i;
-int d;
-for (i = '0'; i <= '9'; ++i)
+int x;
+int e;
+for (x = '0'; x <= '9'; ++x)
 {
-for (d = '0'; d <= '9'; ++d)
+for (e = '0'; e <= '9'; ++e)
 {
-if (i != '0' || d != '0')
+if (x != '0' || e != '0')
 {
 putchar(',');
 putchar(' ');
 }
-putchar(i);
-putchar(d);
+putchar(x);
+putchar(e);
 }
 }
 putchar('\n');
