@@ -7,19 +7,19 @@
 void times_table(void)
 {
 int a, r;
-for (a = 0; a < 10; a++)
+for (a = 0; a <= 9; a++)
 {
-for (r = 0; r < 10; r++)
+for (r = 0; r <= 9; r++)
 {
-if (a * r > 10)
+if (a * r > 9)
 {
 if (r != 0)
 {
 _putchar(',');
 _putchar(' ');
 }
-_putchar((a * r) / 10.0 + '0');
-_putchar((a * r) % 10.0 + '0');
+_putchar((a * r) / 10 + '0');
+_putchar((a * r) % 10 + '0');
 }
 else
 {
