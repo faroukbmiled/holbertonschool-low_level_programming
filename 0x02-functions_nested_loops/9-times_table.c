@@ -18,8 +18,8 @@ if (r != 0)
 _putchar(',');
 _putchar(' ');
 }
-_putchar((a * r) / 11 + '0');
-_putchar((a * r) % 11 + '0');
+_putchar((a * r) / 10.0 + '0');
+_putchar((a * r) % 10.0 + '0');
 }
 else
 {
