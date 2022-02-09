@@ -23,6 +23,8 @@ _putchar((a * r) % 10 + '0');
 }
 else
 {
+if (j != 0)
+{
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
