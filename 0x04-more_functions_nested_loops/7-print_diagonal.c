@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * print_diagonal -diagonal line.
 * @n: integer.
@@ -6,20 +7,20 @@
 */
 void print_diagonal(int n)
 {
-int i, b;
+int i, j;
 
 i = 0;
 if (n > 0)
 {
-while (i < b)
+while (i < n)
 {
-b = 0;
-while (b < i)
+j = 0;
+while (j < i)
 {
 _putchar(' ');
-b++;
+j++;
 }
-b++;
+i++;
 _putchar('\\');
 _putchar('\n');
 }
