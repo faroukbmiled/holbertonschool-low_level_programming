@@ -5,15 +5,14 @@
 * Return: Triangle
 */
 void print_triangle(int size)
-{
-int i, j, n;
+int i, j, h;
 i = 0;
 if (size > 0)
 {
 while (i < size)
 {
-n = size - i;
-while (n > 1)
+h = size - i;
+while (h > 1)
 {
 _putchar(' ');
 h--;
