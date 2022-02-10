@@ -5,6 +5,7 @@
 * Return: Triangle
 */
 void print_triangle(int size)
+{
 int i, j, h;
 i = 0;
 if (size > 0)
