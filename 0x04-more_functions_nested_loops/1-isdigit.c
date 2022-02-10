@@ -7,7 +7,7 @@
  */
 int _isdigit(int c)
 {
-if (c >= '1' && c <= '99', c++)
+if (c >= '0' && c <= '99')
 {
 return (1);
 }
