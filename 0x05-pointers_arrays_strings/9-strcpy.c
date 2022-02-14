@@ -4,7 +4,6 @@
  * @src: pointer to string
  * @dest: pointer to buffer
  * Return: the pointer to dest
- * 
  */
 char *_strcpy(char *dest, char *src)
 {
