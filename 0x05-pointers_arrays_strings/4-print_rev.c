@@ -9,7 +9,7 @@ void print_rev(char *s)
 int l, i;
 for (l = 0; s[l] != '\0'; ++l)
 i = l - 1;
-for (i = i; s[i] >= 0; --i)
+for (i = i; i >= 0; --i)
 {
 _putchar(s[i]);
 }
