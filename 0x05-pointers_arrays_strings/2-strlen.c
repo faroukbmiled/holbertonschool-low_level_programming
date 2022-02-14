@@ -7,6 +7,6 @@
 int _strlen(char *s)
 {
 int len
-char string[] = *s
+char string[] = s
 len = strlen(string);
 }
