@@ -6,8 +6,8 @@
 */
 int _strlen(char *s)
 {
-int len;
-for (len = 0; *s[len] != '\0'; ++len)
-;
-return (len);
+int i;
+for (i = 0; s[i] != '\0'; ++i)
+	;
+return (i);
 }
