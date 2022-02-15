@@ -29,5 +29,5 @@ int main (void)
                 printf ("%c%c%c", alp[x], num[y], sym[z]);
         }
  
-        return 0;
+        return (0);
 }
