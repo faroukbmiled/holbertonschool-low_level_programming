@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * leet - encodes a string
@@ -8,8 +9,8 @@
 char *leet(char *string)
 {
 int i, x;
-char l[] = "oOlLeEaAtT";
-char n[] = "0011334477";
+char l[] = "aAeEoOtTlL";
+char n[] = "4433007711";
 i = 0;
 x = 0;
 while (string[i] != '\0')
