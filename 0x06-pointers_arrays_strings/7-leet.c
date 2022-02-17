@@ -14,6 +14,7 @@ i = 0;
 x = 0;
 while (string[i] != '\0')
 {
+x = 0;
 while (l[x] != '\0')
 {
 if (string[i] == l[x])
