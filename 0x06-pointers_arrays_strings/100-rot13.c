@@ -7,11 +7,11 @@
 char *rot13(char *string)
 {
 int i, x;
-x = 0;
-i = 0;
 char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-while (string[i] != '\0')
+i = 0;
+x = 0;
+for (i = 0;  string[i] != '\0'; i++)
 {
 while (c[x] != '\0')
 {
