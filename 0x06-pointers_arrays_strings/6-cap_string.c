@@ -20,7 +20,7 @@ else
 {
 for (x = 0; x <= 12; x++)
 {
-if (c[x] == str[i-1])
+if (c[x] == str[i - 1])
 str[i] = str[i] - 32;
 }
 }
