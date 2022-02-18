@@ -11,7 +11,7 @@ x = 0;
 i = 0;
 char c[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-for (i = 0;  string[i] != '\0'; i++)
+while (string[i] != '\0')
 {
 while (c[x] != '\0')
 {
