@@ -7,9 +7,10 @@
  */
 char *cap_string(char *str)
 {
-int i, x;
-char c[] = {9, 32, 10, ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-for (i = 0;  str[i] != '\0'; i++)
+int i = 0;
+int x;
+char c[] = " (){};.!\t\n,?\"";
+while (str[i])
 {
 if (str[i] >= 'a' && str[i] <= 'z')
 {
@@ -19,7 +20,7 @@ else
 {
 for (x = 0; x <= 12; x++)
 {
-if (c[x] == (str[i] - 1))
+if (c[x] == str[i-1])
 str[i] = str[i] - 32;
 }
 }
