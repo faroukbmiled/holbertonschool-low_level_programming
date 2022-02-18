@@ -7,9 +7,9 @@
  */
 char *cap_string(char *str)
 {
-int i = 0, x;
-char c[] = " \t\n,;.!?\"(){}";
-while (str[i])
+int i, x;
+char c[] = {9, 32, 10, ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+for (i = 0;  str[i] != '\0'; i++)
 {
 if (str[i] >= 'a' && str[i] <= 'z')
 {
