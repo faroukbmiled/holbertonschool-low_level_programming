@@ -12,7 +12,7 @@ int count, i, x;
 count = 0;
 i = 0;
 x = 0;
-for (i = 0; s[i] != 0; i++)
+while (s[i] != '\0')
 {
 while (accept[x] != '\0')
 {
