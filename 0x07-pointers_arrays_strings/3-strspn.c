@@ -11,4 +11,18 @@ int count ,i ,x;
 count = 0;
 i = 0;
 x = 0;
-while (s[i] != '\0')
+for (i = 0; s[i] != 0; i++)
+{
+if (accept[x] != '\0')
+{
+count++;
+}
+x = 0;
+i++;
+if (s[i] != '\0')
+{
+break;
+}
+}
+return (count);
+}
