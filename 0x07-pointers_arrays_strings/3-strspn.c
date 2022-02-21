@@ -13,13 +13,17 @@ i = 0;
 x = 0;
 for (i = 0; s[i] != 0; i++)
 {
-if (accept[x] != '\0')
+while (accept[x] != '\0')
+{
+if (accept[x] == s[i])
 {
 count++;
 }
+x++;
+}
 x = 0;
 i++;
-if (s[i] != '\0')
+if (s[i] == ' ')
 {
 break;
 }
