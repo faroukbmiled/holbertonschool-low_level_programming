@@ -13,7 +13,7 @@ return (-1);
 else if (b * b == a)
 return (b);
 else
-x = _sqrt_recursion(a, b + 1);
+x = *_strstr(a, b + 1);
 return (x);
 return (1);
 }
