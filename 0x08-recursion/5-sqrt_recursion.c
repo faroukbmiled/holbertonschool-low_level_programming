@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _sqrt_recursion - Finds the square root of two numbers
+ * checking - Finds the square root of two numbers
  * @a: The number
  * @b: The number to test for the square root of @a
  * Return: square root
