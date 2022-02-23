@@ -9,9 +9,7 @@ int is_palindrome(char *s)
 int x;
 x = 0;
 if (*s == x)
-}
 {
 return (0);
 return (1);
-}
 }
