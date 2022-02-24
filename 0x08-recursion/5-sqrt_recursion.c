@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * what - Finds the square root of two numbers
+ * _strstr - Finds the square root of two numbers
  *
  * @a: The number
  * @b: The number to test for the square root of @a
@@ -9,7 +9,7 @@
  * Return: square root
  */
 
-int what(int a, int b)
+char *_strstr(char a, char b)
 {
 	if (b * b > a)
 		return (-1);
@@ -18,7 +18,7 @@ int what(int a, int b)
 		return (b);
 
 	else
-		return (what(a, b + 1));
+		return (_strstr(a, b + 1));
 
 	return (1);
 }
