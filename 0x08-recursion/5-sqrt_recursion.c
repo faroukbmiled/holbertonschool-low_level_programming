@@ -13,20 +13,12 @@ int what(int a, int b)
 {
 	if (b * b > a)
 		return (-1);
+
+	else if (b * b == a)
+		return (b);
+
 	else
 		return (what(a, b + 1));
 
 	return (1);
-}
-/**
- * _sqrt_recursion - natural square root of a number
- * @n: integer to find sqrt of
- * Return: -1
- */
-
-int _sqrt_recursion(int a , int b)
-{
-	if (b * b == a)
-		return (b);
-	return (what(a, b + 1));
 }
