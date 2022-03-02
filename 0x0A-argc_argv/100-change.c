@@ -18,6 +18,9 @@ x -= n * chr[i];
 }
 printf("%d\n", j);
 if (argc != 2)
+printf("Error\n");
+return (1);
+}
 {
 else
 printf("Error\n");
