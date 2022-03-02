@@ -8,8 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-int i, n, j, x = 0;
+int i, n, j, x ;
 int chr[] = {25, 10, 5, 2, 1};
+x = 0;
 if (argc != 2)
 {
 printf("Error\n");
