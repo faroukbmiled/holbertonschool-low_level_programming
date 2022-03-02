@@ -1,31 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print the minimum number of coins to make change
+ * main - prints the minimum number of coins to make change for an amount of money.
  * @argc: int
  * @argv: string
- * Return: int
+ * Return: Always 0
  */
 int main(int argc, char *argv[])
 {
-int i, n, x, j = 0;
+int i, n, j, x = 0;
 int chr[] = {25, 10, 5, 2, 1};
 if (argc != 2)
+{
 printf("Error\n");
 return (1);
 }
-x = atoi(argv[1]);
-if (x < 1)
+j = atoi(argv[1]);
+if (j < 1)
 printf("0\n");
 else
 {
-for (i = 0; i < 5 && x; i++)
+for (i = 0; i < 5 && j; i++)
 {
-n = x / chr[i];
-j += n;
-x -= n * chr[i];
+n = j / chr[i];
+x += n;
+j -= n * chr[i];
 }
-printf("%d\n", j);
+printf("%d\n", x);
 }
 return (0);
 }
