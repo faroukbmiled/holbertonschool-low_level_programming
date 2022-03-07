@@ -1,7 +1,52 @@
-#include "dog.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
+char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
-char *_strcpy(char *x, char *y);
+/**
+* _strlen -returns the length of a string
+* @s: char
+* Return: i.
+*/
+int _strlen(char *s)
+{
+int i;
+for (i = 0; s[i] != '\0'; ++i)
+	;
+return (i);
+}
+/**
+ * _strcpy - copy the string
+ * @dest: array that returns
+ * @src: the pointer that receive the string
+ *
+ * Return: the parameter dest.
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int n = 0;
+	int i;
+
+	while (src[n] != '\0')
+	{
+		n++;
+	}
+
+	i = 0;
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+
+	i = i;
+	while (i <= n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
+}
 /**
  * new_dog - makes a new dog, memory and all
  * @name: name to create mem and assign to for dog
