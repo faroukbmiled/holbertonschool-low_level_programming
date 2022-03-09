@@ -30,3 +30,6 @@ if ((*chr == '/' && x == 0) ||
 printf("Error\n");
 exit(100);
 }
+printf("%d\n", get_op_func(chr)(i, x));
+return (0);
+}
