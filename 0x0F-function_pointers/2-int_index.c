@@ -4,6 +4,7 @@
  *@array:int
  *@size:size if arrays
  * @array: array of elements
+ * @cmp: function pointer thaat takes an int
  * Return: return the index of the first element
  */
 int int_index(int *array, int size, int (*cmp)(int))
@@ -15,7 +16,7 @@ return (-1);
 }
 for (x = 0 ; x < size ; x++)
 {
-if ((*cmp)(array[x]) != 0)
+if ((cmp)(array[x]) != 0)
 {
 return (x);
 }
