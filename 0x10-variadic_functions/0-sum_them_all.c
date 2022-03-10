@@ -13,7 +13,7 @@ unsigned int i;
 int x = 0;
 va_start(va, n);
 for (i = 0; i < n; i++)
-va = va + va_arg(va, int);
+x = x + va_arg(va, int);
 va_end(va);
-return (va);
+return (x);
 }
