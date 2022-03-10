@@ -1,3 +1,6 @@
+;Filename: 100-hello_world.asm
+;author: wael bessaies
+;description: a 64-bit program in assembly that prints Hello, World.
 section .data
 message db "Hello, Holberton",10
 section .text
