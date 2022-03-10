@@ -1,13 +1,13 @@
-;Filename: 100-hello_world.asm
-;author: wael bessaies
-;description: a 64-bit program in assembly that prints Hello, World.
-section .data
-message db "Hello, Holberton",10
-section .text
 global main
+section .text
 main:
-mov rdi, 1
-mov rsi, message
-mov rax, 1
-mov rdx, 17
-syscall
+mov edx,msglen
+mov ecx,message
+mov ebx,1
+mov eax,4
+int 0x80
+mov eax,0
+int 0x80
+section .data
+message: db "Hello, World", 0xa
+msglen equ $ - message
