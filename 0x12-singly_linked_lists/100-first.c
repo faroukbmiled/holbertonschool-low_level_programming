@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - execute before main
+ * exec_first - execute before main
  * Return: no return.
  */
 void exec_first(void) __attribute__ ((constructor));
