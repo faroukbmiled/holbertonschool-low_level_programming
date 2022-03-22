@@ -1,13 +1,12 @@
 #include "lists.h"
 /**
- * sum_listint - returns the sum of all data
+ * sum_listint - returns the sum of all data of a list
  * @head: pointer to head node
- * Return: sum or 0 
+ * Return: sum of data or 0
  */
 int sum_listint(listint_t *head)
 {
-unsigned int s;
-s = 0;
+unsigned int s = 0;
 while (head)
 {
 s += head->n;
