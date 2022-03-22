@@ -6,15 +6,15 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t i, m;
-i = 0;
-while (head != NULL)
+size_t i = 0;
+while (head)
 {
-m = head - head->next;
 i++;
 printf("[%p] %d\n", (void *)head, head->n);
-if (m > 0)
+if (head - head->next > 0)
+{
 head = head->next;
+}
 else
 {
 printf("-> [%p] %d\n", (void *)head->next, head->next->n);
