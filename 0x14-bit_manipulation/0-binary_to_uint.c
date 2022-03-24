@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * binary_to_uint - converts binary number to unsigned int
- * @b: binary number to convert
- * Return: converted number or 0 if string contains chars not 0 or 1 / NULL
+ * @b: binary number
+ * Return: converted number or 0 if string contains chars not 0 or 1
  */
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int sum;
 sum = 0;
-if (!b)
+while (!b)
 return (0);
 if (*b)
 {
