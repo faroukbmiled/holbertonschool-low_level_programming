@@ -3,7 +3,7 @@
  * create_file - creates a file.
  * @filename: name of the file.
  * @text_content: string to write to the file.
- * Return: 1 or -1 
+ * Return: 1 or -1
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -21,7 +21,8 @@ if (text_content == NULL)
 {
 text_content = "";
 }
-for (i = 0 ; text_content[i] != '\0' ; i++);
+for (i = 0 ; text_content[i] != '\0' ; i++)
+;
 w = write(f, text_content, i);
 if (w == -1)
 {
